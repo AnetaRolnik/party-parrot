@@ -1,0 +1,42 @@
+
+.navigation {
+    position: fixed;
+    top: 0;
+    padding: 28px 0;
+    width: 100%;
+    transition: padding 200ms linear;
+
+    &.scrolled {
+        background: $color-primary-dark;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+        padding: 10px 0;
+    }
+}
+
+.navigation__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1161px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navigation__logo {
+    width: 159px;
+}
+
+.navigation__menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.navigation__link {
+    text-decoration: none;
+    color: $color-primary;
+    text-transform: uppercase;
+    font-family: "Raleway-Bold";
+    margin-left: 30px;
+    display: inline-block;
+}

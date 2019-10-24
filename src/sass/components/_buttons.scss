@@ -1,0 +1,15 @@
+.page__btn--primary {
+    width: 320px;
+    border-radius: 2px;
+    background-color: $color-accent;
+    color: $color-primary;
+    font-family: 'Raleway-Bold';
+    padding: 15px 0;
+    border: none;
+    cursor: pointer;
+    transition: background-color 200ms;
+
+    &:hover {
+        background-color: darken($color-accent, 10%);
+    }
+}

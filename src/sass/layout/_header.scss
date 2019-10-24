@@ -1,0 +1,27 @@
+.head {
+    background: url('./assets/images/pp-main-background.jpg') no-repeat center/ cover;
+    text-align: center;
+    color: $color-primary;
+    padding: 225px 0 100px;
+}
+
+.head__title {
+    margin: 0 0 20px;
+    text-transform: uppercase;
+    font-family: "Raleway-Bold";
+}
+
+.head__header {
+    margin: 0 0 30px;
+    font-family: "Millunium-Medium";
+}
+
+.head__text {
+    width: 640px;
+    font-family: "Raleway-Medium";
+    margin: 0 auto;
+}
+
+.head__btn {
+    margin: 58px 0;
+}

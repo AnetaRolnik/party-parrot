@@ -1,0 +1,13 @@
+.page__container {
+    max-width: 1161px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.page--white {
+    background-color: $color-primary;
+}
+
+.page--grey {
+    background-color: $color-primary-light;
+}

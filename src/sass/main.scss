@@ -1,5 +1,14 @@
-@import './base/normalize';
-@import './base/typography';
-
 @import './abstracts/variables';
 @import './abstracts/mixins';
+
+@import './base/normalize';
+@import './base/typography';
+@import './base/base';
+
+@import './layout/navigation';
+@import './layout/header';
+@import './layout/footer';
+@import './layout/form';
+@import './layout/layout';
+
+@import './components/buttons';

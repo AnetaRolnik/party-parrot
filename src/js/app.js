@@ -1,5 +1,7 @@
 import date from "./components/date";
+import navigation from "./components/navigation";
 
-document.addEventListener("DOMContentLoaded", function() {
+$(function() {
     date();
+    navigation();
 });

@@ -4,26 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="./bundle.min.js"></script>
     <link href="./style.min.css" rel="stylesheet">
     <title>Party Parrot</title>
 </head>
-<body class="page">
-    <nav class="menu page__menu">
-        <div class="menu__container page__container">
+<body class="page">   
+    <nav class="navigation page__navigation">
+        <div class="navigation__container">
             <a href="#">
-                <img class="menu__logo" alt="JohnnyBros – We are Team!" title="JohnnyBros" src="./assets/images/logo.gif">
+                <img class="navigation__logo" alt="JohnnyBros – We are Team!" title="JohnnyBros" src="./assets/images/logo.gif">
             </a>
-            <ul class="menu__list">
-                <li><a class="menu__link" href="#home">Home</a></li>
-                <li><a class="menu__link" href="#tournament">O turnieju</a></li>
-                <li><a class="menu__link" href="#awards">Nagrody</a></li>
-                <li><a class="menu__link" href="#join">Jak dołączyć</a></li>
-                <li><a class="menu__link" href="#contact">Kontakt</a></li>
+            <ul class="navigation__menu">
+                <li><a class="navigation__link" href="#home">Home</a></li>
+                <li><a class="navigation__link" href="#tournament">O turnieju</a></li>
+                <li><a class="navigation__link" href="#awards">Nagrody</a></li>
+                <li><a class="navigation__link" href="#join">Jak dołączyć</a></li>
+                <li><a class="navigation__link" href="#contact">Kontakt</a></li>
             </ul>
         </div>
     </nav>
-    
+
     <header class="head page__head" id="home">
         <div class="head__container page__container">
             <h4 class="head__title">Turniej Piłkarzyków</h2>
@@ -36,14 +37,14 @@
 
     <section class="tournament page--grey" id="tournament">
         <div class="tournament__container page__container">
-            <section class="tournament__about page__grid">
+            <section class="tournament__about page__box--white">
                 <h4 class="tournament__title page__title">O turnieju</h4>
                 <h3 class="tournament__header page__header">Graj z najlepszymi, poczuj ducha rywalizacji i wiatr we włosach</h3>
                 <p class="tournament__text page__text">Party Parrot Tournament to turniej piłkarzyków, który oferuje jego uczestnikom niezwykłe doznania, takie jak duże ilości dokuczliwych żartów ze strony drużyny przeciwnej i frustrujące porażki, ale także satysfakcjonujące zwycięstwa oraz możliwość zobaczenia grymasu na twarzy osoby, którą właśnie pokonałeś 10 - 0. Brzmi ciekawie?</p>
                 <button class="tournament__btn page__btn--primary">Dołącz do turnieju</button>
             </section>
             <img class="tournament__photo" alt="foosball" src="./assets/images/pp-foosball-match.jpg">
-            <section class="tournament__statistics">
+            <section class="tournament__statistics page__box--green">
                 <h4 class="tournament__title">Dzienne statystyki</h4>
                 <div class="tournament__grid">
                     <div>
@@ -99,13 +100,13 @@
 
     <section class="join page--grey" id="join">
         <div class="join__container page__container">
-            <section class="join__how page__grid">
+            <section class="join__how page__box--white">
                 <h4 class="join__title page__title">Jak dołączyć?</h4>
                 <h3 class="join__header page__header">Wystarczy chwila, aby móc cieszyć się piłkarzykami!</h3>
                 <p class="join__text page__text">Zachęciły Cię nagrody lub wizja momentów pełnych satysfakcji i chcesz dołączyć do turnieju? Zarejestruj się na naszym serwisie i zacznij cieszyć się emocjami przy stole do piłkarzyków!</p>
                 <button class="join__btn page__btn--primary">Dołącz do turnieju</button>
             </section>
-            <section class="join__opinion">
+            <section class="join__opinion page__box--green">
                 <p class="join__rating">Nic jeszcze we mnie nie wzbudziło większych emocji niż Turniej Piłkarzyków Party Parrot. Świetna zabawa i idealny sposób na integrację pracowników. Chcesz wiedzieć jak poznałam bliżej ekipę z pracy? Grałam z nimi w piłkarzyki. To niby takie proste, a jednak gdy ukryty gen rywalizacji sportowej powoduje, że poznajesz tę samą osobę od innej strony. Masa śmiechu gwarantowana. Dzięki Turniejowi Party Parrot mogłam zostać Lewandowskim w spódnicy, a co! </p>
                 <div>
                     <img class="join__avatar" alt="avatar" src="./assets/images/avatar.png">
@@ -135,7 +136,7 @@
                         <label class="contact__label" for="message">Treść wiadomości</label>
                         <textarea class="contact__textarea" name="message" id="message" required></textarea>
                     </div>
-                    <button class="contact__btn page__btn--primary" type="submit" value="Wyślij wiadomość">
+                    <button class="contact__btn page__btn--primary" type="submit">Wyślij wiadomość</button>
                 </form>
             </div>
         </div>
@@ -143,7 +144,7 @@
 
     <footer class="footer page__footer">
         <div class="footer__container page__container">
-            <a class="footer__link" href="mailto:hello@johnnybros.com">
+            <p class="footer__copy" href="mailto:hello@johnnybros.com">
                 © JohnnyBros
                 <span class="footer__date"></span>
             </a>
