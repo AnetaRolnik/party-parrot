@@ -1,0 +1,47 @@
+.join__container {
+    padding: 108px 0 152px;
+    display: grid;
+    grid-template-columns: 50% calc(50% + 48px);
+}
+
+.join__heading {
+    margin: 0 0 20px;
+}
+
+.join__text {
+    margin-bottom: 33px;
+}
+
+.join__opinion {
+    position: relative;
+    padding: 36px 36px 36px 138px;
+    top: 67px;
+    left: -48px;
+}
+
+.join__rating {
+    font-family: "Raleway-Medium";
+    margin-bottom: 24px;
+}
+
+.join__person {
+  display: flex;
+  align-items: center;
+}
+
+.join__avatar {
+    border-radius: 50%;
+    background: $color-primary;
+    width: 64px;
+    margin-right: 20px;
+}
+
+.join__name {
+    margin: 0;
+    font-family: "Raleway-Bold";
+}
+
+.join__profession {
+    margin: 0;
+    font-family: "Raleway-Medium";
+}

@@ -1,0 +1,49 @@
+.tournament {
+    padding: 103px 0 152px;
+    position: relative;
+}
+
+.tournament__container {
+    display: grid;
+    grid-template-columns: 50% calc(50% + 93px);
+}
+
+.tournament__about {
+    height: 420px;
+}
+
+.tournament__heading {
+    margin: 0 0 20px;
+}
+
+.tournament__photo {
+    position: relative;
+    top: 72px;
+    left: -93px;
+    max-width: 100%;
+}
+
+.tournament__statistics {
+    position: absolute;
+    bottom: -90px;
+    right: calc(50% + 93px);
+    padding: 40px 42px 38px;
+    text-align: center;
+}
+
+.tournament__grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tournament__number {
+    margin: 0;
+    font-family: "Millunium-Medium";
+    font-weight: 400;
+}
+
+.tournament__desc {
+    margin: 0;
+    font-family: "Raleway-Bold";
+    width: 100px;
+}
