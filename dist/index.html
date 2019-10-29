@@ -7,6 +7,10 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="./bundle.min.js"></script>
     <link href="./style.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" sizes="16x16" href="./assets/icons/favicon-16x16.ico">
+    <link rel="shortcut icon" type="image/x-icon" sizes="32x32" href="./assets/icons/favicon-32x32.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
     <title>Party Parrot</title>
 </head>
 <body class="page">   
@@ -31,7 +35,7 @@
             <h1 class="head__heading">Party Parrot Tournament</h1>
             <p class="head__text">Czy masz już dosyć nudnej codzienności, potrzebujesz nowych doznań, lub po prostu chcesz wymiatać w piłkarzykach? W takim wypadku możesz być pewien, że turniej piłkarzyków Party Parrot jest stworzony dla Ciebie!</p>
             <button class="head__btn page__btn--primary">Dołącz do turnieju</button>
-            <a class="head__btn page__btn--scroll" href="#tournament"></a>
+            <a class="head__btn--scroll page__btn--scroll" href="#tournament"></a>
         </div>
     </header>
 
@@ -126,17 +130,19 @@
                 <h4 class="contact__title page__title">Kontakt</h4>
                 <h3 class="contact__heading page__heading">Napisz do nas</h3>
                 <form class="contact__form page__form" action="">
-                    <div class="contact__field page__field">
-                        <label class="contact__label page__label" for="name">Imię i nazwisko</label>
-                        <input class="contact__input page__input" type="text" name="name" id="name" required>
+                    <div class="contact__row--top page__row--top">
+                        <div class="contact__field page__field">
+                            <input class="page__input page__element" type="text" name="name" id="name" required>
+                            <label class="page__label" for="name">Imię i nazwisko</label>
+                        </div>
+                        <div class="contact__field page__field">
+                            <input class="page__input page__element" type="email" name="email" id="email" required>
+                            <label class="page__label" for="email">Adres e-mail</label>
+                        </div>
                     </div>
-                    <div class="contact__field page__field">
-                        <label class="contact__label page__label" for="email">Adres e-mail</label>
-                        <input class="contact__input page__input" type="email" name="email" id="email" required>
-                    </div>
-                    <div class="contact__field page__field">
-                        <label class="contact__label page__label" for="message">Treść wiadomości</label>
-                        <textarea class="contact__textarea page__textarea" name="message" id="message" required></textarea>
+                    <div class="page__field page__row--bottom">
+                        <textarea class="page__textarea page__element" name="message" id="message" required></textarea>
+                        <label class="page__label" for="message">Treść wiadomości</label>
                     </div>
                     <button class="contact__btn page__btn--primary" type="submit">Wyślij wiadomość</button>
                 </form>

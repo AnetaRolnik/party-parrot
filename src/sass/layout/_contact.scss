@@ -16,3 +16,12 @@
     width: 50%;
     padding-left: 16px;
 }
+
+.contact__row--top {
+    display: flex;
+    justify-content: space-between;
+
+    .contact__field {
+        width: 48%;
+    }
+}

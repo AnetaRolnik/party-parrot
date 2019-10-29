@@ -13,3 +13,40 @@
         background-color: darken($color-accent, 10%);
     }
 }
+
+.page__btn--scroll {
+    width: 36px;
+    height: 36px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    background: transparent;
+    display: block;
+    position: relative;
+    animation: bounce 2s infinite;
+    transition: transform .2s ease-in;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: calc(50% - 5px);
+        left: calc(50% - 5px);
+        transform: rotate(-45deg);
+        display: block;
+        width: 10px;
+        height: 10px;
+        border: 2px solid rgba(255, 255, 255, 0.7);
+        border-width: 0 0 3px 3px;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-15px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+}

@@ -1,7 +1,10 @@
 .join__container {
     padding: 108px 0 152px;
-    display: grid;
-    grid-template-columns: 50% calc(50% + 48px);
+    position: relative;
+}
+
+.join__how {
+    width: 50%;
 }
 
 .join__heading {
@@ -13,15 +16,28 @@
 }
 
 .join__opinion {
-    position: relative;
+    position: absolute;
+    width: 55%;
     padding: 36px 36px 36px 138px;
-    top: 67px;
-    left: -48px;
+    top: 175px;
+    right: 0;
 }
 
 .join__rating {
     font-family: "Raleway-Medium";
     margin-bottom: 24px;
+    position: relative;
+
+    &::before {
+        content: '';
+        background: url('./assets/icons/quote-right.svg') no-repeat;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 0;
+        left: -54px;
+        fill: red;
+    }
 }
 
 .join__person {

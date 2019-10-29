@@ -3,10 +3,11 @@
     border-radius: 2px;
     background-color: $color-primary;
     padding: 48px;
+    position: relative;
     z-index: 2;
 }
 
 .page__box--green {
     background-color: $color-accent;
-    color: $color-primary
+    color: $color-primary;
 }
