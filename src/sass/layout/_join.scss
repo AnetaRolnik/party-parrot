@@ -1,6 +1,5 @@
-.join__container {
+.join {
     padding: 108px 0 152px;
-    position: relative;
 }
 
 .join__how {
@@ -19,7 +18,7 @@
     position: absolute;
     width: 55%;
     padding: 36px 36px 36px 138px;
-    top: 175px;
+    top: 67px;
     right: 0;
 }
 
@@ -36,7 +35,7 @@
         position: absolute;
         top: 0;
         left: -54px;
-        fill: red;
+        opacity: 0.5;
     }
 }
 
@@ -60,4 +59,63 @@
 .join__profession {
     margin: 0;
     font-family: "Raleway-Medium";
+}
+
+@media (max-width: 1024px) {
+    .join {
+        padding: 72px 0 194px;
+    }
+    
+    .join__how {
+        width: 600px;
+        max-width: 90%;
+    }
+    
+    .join__opinion {
+        width: 628px;
+        max-width: 92%;
+        padding: 102px 30px 42px 84px;
+        top: 300px;
+    }
+    
+    .join__avatar {
+        width: 48px;
+        margin-right: 16px;
+    }
+}
+
+@media (max-width: 640px) {
+    .join {
+        padding: 42px 0 0;
+    }
+    
+    .join__how {
+        margin: 0 auto;
+        max-width: 100%;
+        width: calc(100% - 16px);
+    }
+    
+    .join__heading {
+        margin-bottom: 24px;
+    }
+    
+    .join__text {
+        margin-bottom: 26px;
+    }
+    
+    .join__opinion {
+        position: static;
+        margin-top: -36px;
+        width: 100%;
+        max-width: 100%;
+        padding: 72px 16px 36px;
+    }
+    
+    .join__rating::before {
+        width: 81px;
+        height: 81px;
+        top: -20px;
+        left: calc(100% - 81px);
+        opacity: 0.15;
+    }
 }

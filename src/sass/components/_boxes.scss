@@ -11,3 +11,9 @@
     background-color: $color-accent;
     color: $color-primary;
 }
+
+@media (max-width: 640px) {
+    .page__box--white {
+        padding: 36px 16px;
+    }
+}

@@ -36,3 +36,43 @@ button {
     line-height: 19px;
     letter-spacing: -0.13px;
 }
+
+@media (max-width: 640px) {
+    h1 {
+        font-size: 38px;
+        line-height: 38px;
+        letter-spacing: -0.63px;
+    }
+    
+    h2 {
+        font-size: 32px;
+        line-height: 38px;
+        letter-spacing: -0.13px;
+    }
+    
+    h3 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    
+    h4 {
+        font-size: 15px;
+        letter-spacing: 2.25px;
+    }
+    
+    h5 {
+        font-size: 15px;
+        line-height: 16px;
+    }
+    
+    p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    
+    button {
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: -0.12px;
+    }
+}

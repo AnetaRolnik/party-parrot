@@ -1,7 +1,8 @@
 .page__container {
     max-width: 1200px;
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto;  
+    position: relative;
 }
 
 .page--white {
@@ -10,4 +11,16 @@
 
 .page--grey {
     background-color: $color-primary-light;
+}
+
+@media (max-width: 1024px) {
+    .page__container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 640px) {
+    .page__container {
+        width: 100%;
+    }
 }

@@ -25,3 +25,45 @@
         width: 48%;
     }
 }
+
+.contact__heading {
+    margin: 0 0 42px;
+}
+
+@media (max-width: 1024px) {
+    .contact {
+        padding: 196px 0 72px;
+    }
+
+    .contact__container {
+        display: block;
+    }
+
+    .contact__photo {
+        width: 100%;
+        padding-right:0;
+    }
+    
+    .contact__grid {
+        width: 100%;
+        padding: 60px 30px 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .contact {
+        padding: 0 0 42px;
+    }
+
+    .contact__grid {
+        padding: 42px 16px 0;
+    }
+
+    .contact__row--top {
+        display: block;
+
+        .contact__field {
+            width: 100%;
+        }
+    } 
+}

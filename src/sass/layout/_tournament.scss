@@ -1,14 +1,10 @@
 .tournament {
     padding: 103px 0 80px;
-    position: relative;
-}
-
-.tournament__container {
-    position: relative;
 }
 
 .tournament__about {
     width: 50%;
+    position: relative;
 }
 
 .tournament__heading {
@@ -51,4 +47,73 @@
     margin: 0;
     font-family: "Raleway-Bold";
     max-width: 100px;
+}
+
+
+@media (max-width: 1024px) {
+    .tournament {
+        padding: 72px 0 196px;
+    }
+    
+    .tournament__about {
+        width: calc(100% - 35% + 30px);
+    }
+    
+    .tournament__heading {
+        margin-bottom: 27px;
+    }
+    
+    .tournament__photo {
+        width: 65%;
+        left: 30px;
+        top: 100%;
+    }
+    
+    .tournament__statistics {
+        right: 0;
+        top: 124px;
+        padding: 40px 30px 20px 60px;
+        width: 35%;
+    }
+    
+    .tournament__grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .tournament__desc {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .tournament {
+        padding: 42px 0 0;
+    }
+    
+    .tournament__about {
+        width: calc(100% - 16px);
+        margin: 0 auto;
+    }
+    
+    .tournament__photo {
+        position: static;
+        width: 100%;
+        margin: -36px 0 -4px;
+    }
+    
+    .tournament__statistics {
+        position: static;
+        padding: 36px 16px;
+        width: 100%;
+    }
+    
+    .tournament__title {
+        margin-bottom: 25px;
+    }
+    
+    .tournament__desc {
+        margin-bottom: 16px;
+        max-width: 100%;
+    }
 }

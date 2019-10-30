@@ -44,9 +44,21 @@
       transform: translateY(0);
     }
     40% {
-      transform: translateY(-15px);
-    }
-    60% {
       transform: translateY(-10px);
     }
+    60% {
+      transform: translateY(-5px);
+    }
+}
+
+@media (max-width: 640px) {
+  .page__btn--primary {
+    width: 100%;
+    padding: 12px 0;
+  }
+
+  .page__btn--scroll {
+    width: 30px;
+    height: 30px;
+  }
 }

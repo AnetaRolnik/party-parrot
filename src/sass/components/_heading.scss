@@ -10,3 +10,9 @@
     font-family: "Millunium-Medium";
     font-weight: 500;
 }
+
+@media (max-width: 640px) {
+    .page__title {
+        margin-bottom: 0 0 6px;
+    }
+}
