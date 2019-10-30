@@ -49,7 +49,7 @@
     transition: color 200ms;
     font-size: 15px;
 
-    &:hover {
+    &:hover, &--active {
         color: $color-accent;
     }
 }
