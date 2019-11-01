@@ -23,7 +23,7 @@
 }
 
 .join__rating {
-    font-family: "Raleway-Medium";
+    font-weight: 500;
     margin-bottom: 24px;
     position: relative;
 
@@ -53,15 +53,14 @@
 
 .join__name {
     margin: 0;
-    font-family: "Raleway-Bold";
 }
 
 .join__profession {
     margin: 0;
-    font-family: "Raleway-Medium";
+    font-weight: 500;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $desktop) {
     .join {
         padding: 72px 0 194px;
     }
@@ -84,7 +83,7 @@
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: $phone-big) {
     .join {
         padding: 42px 0 0;
     }

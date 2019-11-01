@@ -13,13 +13,13 @@
     background-color: $color-primary-light;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $desktop) {
     .page__container {
         width: 95%;
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: $phone-big) {
     .page__container {
         width: 100%;
     }

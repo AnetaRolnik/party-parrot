@@ -30,7 +30,7 @@
     margin: 0 0 42px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $desktop) {
     .contact {
         padding: 196px 0 72px;
     }
@@ -50,7 +50,7 @@
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: $phone-big) {
     .contact {
         padding: 0 0 42px;
     }

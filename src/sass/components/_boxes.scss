@@ -12,7 +12,7 @@
     color: $color-primary;
 }
 
-@media (max-width: 640px) {
+@media (max-width: $phone-big) {
     .page__box--white {
         padding: 36px 16px;
     }

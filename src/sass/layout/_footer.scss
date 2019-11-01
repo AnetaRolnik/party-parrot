@@ -5,12 +5,12 @@
 }
 
 .footer__copy {
-    font-family: "Raleway-Medium";
+    font-weight: 500;
     color: $color-primary;
     margin: 0;
 }
 
-@media (max-width: 640px) {
+@media (max-width: $phone-big) {
     .footer {
         padding: 33px 0;
     }

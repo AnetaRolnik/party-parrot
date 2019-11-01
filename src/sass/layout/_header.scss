@@ -8,17 +8,15 @@
 .head__title {
     margin: 0 0 9px;
     text-transform: uppercase;
-    font-family: "Raleway-Bold";
 }
 
 .head__heading {
     margin: 0 0 35px;
-    font-family: "Millunium-Medium";
 }
 
 .head__text {
     max-width: 640px;
-    font-family: "Raleway-Medium";
+    font-weight: 500;
     margin: 0 auto;
 }
 
@@ -30,7 +28,7 @@
     margin: 0 auto;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $desktop) {
     .head {
         padding: 172px 0 90px;
     }
@@ -44,7 +42,7 @@
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: $phone-big) {
     .head {
         padding: 94px 0 34px;
     }

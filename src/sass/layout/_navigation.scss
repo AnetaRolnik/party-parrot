@@ -22,7 +22,7 @@
 .navigation__logo {
     text-decoration: none;
     color: #fcfdfe;
-    font-family: "Millunium-Medium";
+    font-weight: 500;
     font-size: 22px;
     display: flex;
     align-items: center;
@@ -43,7 +43,7 @@
     text-decoration: none;
     color: $color-primary;
     text-transform: uppercase;
-    font-family: "Raleway-Bold";
+    font-weight: 700;
     margin-left: 30px;
     display: inline-block;
     transition: color 200ms;
@@ -58,7 +58,7 @@
     display: none;
 }
 
-@media (max-width: 1024px) {   
+@media (max-width: $desktop) {   
     .navigation__menu {
         display: block;
         position: fixed;
@@ -75,7 +75,7 @@
 
     .navigation__link {
         margin: 0 0 22px 0;
-        font-family: "Raleway-Medium";
+        font-weight: 500;
         font-size: 28px;
         text-transform: none;
     }
@@ -183,7 +183,7 @@
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: $phone-big) {
     .navigation, .navigation.scrolled {
         padding: 10px 16px;
     }
@@ -224,7 +224,7 @@
     }
 }
 
-@media (max-width: 1024px) and (orientation: landscape) {
+@media (max-width: $desktop) and (orientation: landscape) {
     .navigation__menu {
         padding: 72px 42px 50px;
     }

@@ -1,17 +1,14 @@
 .page__title {
     color: rgba(0, 0, 0, 0.5);
-    font-family: "Raleway-Bold";
     margin: 0 0 9px;
     text-transform: uppercase;
 }
 
 .page__heading {
     color: rgba(0, 0, 0, 0.8);
-    font-family: "Millunium-Medium";
-    font-weight: 500;
 }
 
-@media (max-width: 640px) {
+@media (max-width: $phone-big) {
     .page__title {
         margin-bottom: 0 0 6px;
     }
