@@ -13,6 +13,13 @@
 }
 
 .page__row--top {
+    display: flex;
+    justify-content: space-between;
+
+    .page__field {
+        width: 48%;
+    }
+
     .page__label {
         left: 2px;
         top: 0;
@@ -64,4 +71,14 @@
             background-color: #fff;
         }
     }
+}
+
+@media (max-width: $phone-big) {
+    .page__row--top {
+        display: block;
+
+        .page__field {
+            width: 100%;
+        }
+    } 
 }

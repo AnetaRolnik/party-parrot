@@ -14,48 +14,60 @@
     <title>Party Parrot</title>
 </head>
 <body class="page">   
-    <nav class="navigation page__navigation">
-        <div class="navigation__container page__container">
-            <a class="navigation__logo" href="#">
-                <img class="navigation__image" alt="JohnnyBros – We are Team!" title="JohnnyBros" src="./assets/icons/logo.svg">
-                <span class="navigation__name">johnnybros</span>
-            </a>
-            <div class="navigation__hamburger">
-                <span class="navigation__line"></span>
-                <span class="navigation__line"></span>
-                <span class="navigation__line"></span>
-                <span class="navigation__line"></span>
+    <nav class="nav">
+        <div class="nav__navbar">
+            <div class="nav__container page__container">
+                <a class="nav__logo" href="#">
+                    <img class="nav__image" alt="JohnnyBros – We are Team!" title="JohnnyBros" src="./assets/icons/logo.svg">
+                    <span class="nav__name">johnnybros</span>
+                </a>
+                <ul class="nav__menu nav__menu--desktop">
+                    <li><a class="nav__link nav__link--desktop" href="#home">Home</a></li>
+                    <li><a class="nav__link nav__link--desktop" href="#tournament">O turnieju</a></li>
+                    <li><a class="nav__link nav__link--desktop" href="#awards">Nagrody</a></li>
+                    <li><a class="nav__link nav__link--desktop" href="#join">Jak dołączyć</a></li>
+                    <li><a class="nav__link nav__link--desktop" href="#contact">Kontakt</a></li>
+                </ul>
             </div>
-            <ul class="navigation__menu">
-                <li><a class="navigation__link" href="#home">Home</a></li>
-                <li><a class="navigation__link" href="#tournament">O turnieju</a></li>
-                <li><a class="navigation__link" href="#awards">Nagrody</a></li>
-                <li><a class="navigation__link" href="#join">Jak dołączyć</a></li>
-                <li><a class="navigation__link" href="#contact">Kontakt</a></li>
+        </div>
+
+        <div class="nav__sidebar">
+            <div class="nav__hamburger">
+                <span class="nav__line"></span>
+                <span class="nav__line"></span>
+                <span class="nav__line"></span>
+                <span class="nav__line"></span>
+            </div>
+            <ul class="nav__menu nav__menu--mobile">
+                <li><a class="nav__link nav__link--mobile" href="#home">Home</a></li>
+                <li><a class="nav__link nav__link--mobile" href="#tournament">O turnieju</a></li>
+                <li><a class="nav__link nav__link--mobile" href="#awards">Nagrody</a></li>
+                <li><a class="nav__link nav__link--mobile" href="#join">Jak dołączyć</a></li>
+                <li><a class="nav__link nav__link--mobile" href="#contact">Kontakt</a></li>
             </ul>
         </div>
     </nav>
 
-    <header class="head page__head" id="home">
+    <header class="head" id="home">
         <div class="head__container page__container">
             <h4 class="head__title">Turniej Piłkarzyków</h2>
             <h1 class="head__heading">Party Parrot Tournament</h1>
             <p class="head__text">Czy masz już dosyć nudnej codzienności, potrzebujesz nowych doznań, lub po prostu chcesz wymiatać w piłkarzykach? W takim wypadku możesz być pewien, że turniej piłkarzyków Party Parrot jest stworzony dla Ciebie!</p>
-            <button class="head__btn page__btn--primary">Dołącz do turnieju</button>
-            <a class="head__btn--scroll page__btn--scroll" href="#tournament"></a>
+            <button class="head__btn btn btn--primary">Dołącz do turnieju</button>
+            <a class="head__link btn btn--scroll" href="#tournament"></a>
         </div>
     </header>
 
-    <section class="tournament page--grey" id="tournament">
+    <section class="tournament page__section page__section--grey" id="tournament">
         <div class="tournament__container page__container">
-            <section class="tournament__about page__box--white">
-                <h4 class="tournament__title page__title">O turnieju</h4>
-                <h3 class="tournament__heading page__heading">Graj z najlepszymi, poczuj ducha rywalizacji i wiatr we włosach</h3>
-                <p class="tournament__text page__text">Party Parrot Tournament to turniej piłkarzyków, który oferuje jego uczestnikom niezwykłe doznania, takie jak duże ilości dokuczliwych żartów ze strony drużyny przeciwnej i frustrujące porażki, ale także satysfakcjonujące zwycięstwa oraz możliwość zobaczenia grymasu na twarzy osoby, którą właśnie pokonałeś 10 - 0. Brzmi ciekawie?</p>
-                <button class="tournament__btn page__btn--primary">Dołącz do turnieju</button>
+            <section class="tournament__about box box--white">
+                <h4 class="tournament__title title">O turnieju</h4>
+                <h3 class="tournament__heading heading">Graj z najlepszymi, poczuj ducha rywalizacji i wiatr we włosach</h3>
+                <p class="tournament__text text">Party Parrot Tournament to turniej piłkarzyków, który oferuje jego uczestnikom niezwykłe doznania, takie jak duże ilości dokuczliwych żartów ze strony drużyny przeciwnej i frustrujące porażki, ale także satysfakcjonujące zwycięstwa oraz możliwość zobaczenia grymasu na twarzy osoby, którą właśnie pokonałeś 10 - 0. Brzmi ciekawie?</p>
+                <button class="tournament__btn btn btn--primary">Dołącz do turnieju</button>
             </section>
             <img class="tournament__photo" alt="foosball" src="./assets/images/pp-foosball-match.jpg">
-            <section class="tournament__statistics page__box--green">
+            <section class="tournament__statistics box box--green">
                 <h4 class="tournament__title">Dzienne statystyki</h4>
                 <div class="tournament__grid">
                     <div>
@@ -75,10 +87,10 @@
         </div>
     </section>
 
-    <section class="awards page--white" id="awards">
+    <section class="awards page__section page__section--white" id="awards">
         <div class="awards__container page__container">
-            <h4 class="awards__title page__title">Nagrody</h4>
-            <h3 class="awards__heading page__heading">Dla pięciu najlepszych graczy przygotowano specjalne nagrody</h3>
+            <h4 class="awards__title title">Nagrody</h4>
+            <h3 class="awards__heading heading">Dla pięciu najlepszych graczy przygotowano specjalne nagrody</h3>
             <section class="awards__list">
                 <div class="awards__item">
                     <h2 class="awards__number awards__number--green">#1</h2>
@@ -109,15 +121,15 @@
         </div>
     </section>
 
-    <section class="join page--grey" id="join">
+    <section class="join page__section page__section--grey" id="join">
         <div class="join__container page__container">
-            <section class="join__how page__box--white">
-                <h4 class="join__title page__title">Jak dołączyć?</h4>
-                <h3 class="join__heading page__heading">Wystarczy chwila, aby móc cieszyć się piłkarzykami!</h3>
-                <p class="join__text page__text">Zachęciły Cię nagrody lub wizja momentów pełnych satysfakcji i chcesz dołączyć do turnieju? Zarejestruj się na naszym serwisie i zacznij cieszyć się emocjami przy stole do piłkarzyków!</p>
-                <button class="join__btn page__btn--primary">Dołącz do turnieju</button>
+            <section class="join__how box box--white">
+                <h4 class="join__title title">Jak dołączyć?</h4>
+                <h3 class="join__heading heading">Wystarczy chwila, aby móc cieszyć się piłkarzykami!</h3>
+                <p class="join__text text">Zachęciły Cię nagrody lub wizja momentów pełnych satysfakcji i chcesz dołączyć do turnieju? Zarejestruj się na naszym serwisie i zacznij cieszyć się emocjami przy stole do piłkarzyków!</p>
+                <button class="join__btn btn btn--primary">Dołącz do turnieju</button>
             </section>
-            <section class="join__opinion page__box--green">
+            <section class="join__opinion box box--green">
                 <p class="join__rating">Nic jeszcze we mnie nie wzbudziło większych emocji niż Turniej Piłkarzyków Party Parrot. Świetna zabawa i idealny sposób na integrację pracowników. Chcesz wiedzieć jak poznałam bliżej ekipę z pracy? Grałam z nimi w piłkarzyki. To niby takie proste, a jednak gdy ukryty gen rywalizacji sportowej powoduje, że poznajesz tę samą osobę od innej strony. Masa śmiechu gwarantowana. Dzięki Turniejowi Party Parrot mogłam zostać Lewandowskim w spódnicy, a co! </p>
                 <div class="join__person">
                     <img class="join__avatar" alt="avatar" src="./assets/images/avatar.png">
@@ -130,34 +142,34 @@
         </div>
     </section>
 
-    <section class="contact page--white" id="contact">
+    <section class="contact page__section page__section--white" id="contact">
         <div class="contact__container page__container">
             <img class="contact__photo" src='./assets/images/pp-office.jpg' alt="office">
             <div class="contact__grid">
-                <h4 class="contact__title page__title">Kontakt</h4>
-                <h3 class="contact__heading page__heading">Napisz do nas</h3>
+                <h4 class="contact__title title">Kontakt</h4>
+                <h3 class="contact__heading heading">Napisz do nas</h3>
                 <form class="contact__form page__form" action="">
-                    <div class="contact__row--top page__row--top">
-                        <div class="contact__field page__field">
+                    <div class="page__row page__row--top">
+                        <div class="page__field">
                             <input class="page__input page__element" type="text" name="name" id="name" required>
                             <label class="page__label" for="name">Imię i nazwisko</label>
                         </div>
-                        <div class="contact__field page__field">
+                        <div class="page__field">
                             <input class="page__input page__element" type="email" name="email" id="email" required>
                             <label class="page__label" for="email">Adres e-mail</label>
                         </div>
                     </div>
-                    <div class="page__field page__row--bottom">
+                    <div class="page__row page__row--bottom page__field">
                         <textarea class="page__textarea page__element" name="message" id="message" required></textarea>
                         <label class="page__label" for="message">Treść wiadomości</label>
                     </div>
-                    <button class="contact__btn page__btn--primary" type="submit">Wyślij wiadomość</button>
+                    <button class="contact__btn btn btn--primary" type="submit">Wyślij wiadomość</button>
                 </form>
             </div>
         </div>
     </section>
 
-    <footer class="footer page__footer">
+    <footer class="footer">
         <div class="footer__container page__container">
             <p class="footer__copy" href="mailto:hello@johnnybros.com">
                 © JohnnyBros

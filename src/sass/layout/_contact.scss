@@ -17,15 +17,6 @@
     padding-left: 16px;
 }
 
-.contact__row--top {
-    display: flex;
-    justify-content: space-between;
-
-    .contact__field {
-        width: 48%;
-    }
-}
-
 .contact__heading {
     margin: 0 0 42px;
 }
@@ -58,12 +49,4 @@
     .contact__grid {
         padding: 42px 16px 0;
     }
-
-    .contact__row--top {
-        display: block;
-
-        .contact__field {
-            width: 100%;
-        }
-    } 
 }

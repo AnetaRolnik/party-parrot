@@ -1,4 +1,4 @@
-.page__box--white {
+.box--white {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.18);
     border-radius: 2px;
     background-color: $color-primary;
@@ -7,13 +7,13 @@
     z-index: 2;
 }
 
-.page__box--green {
+.box--green {
     background-color: $color-accent;
     color: $color-primary;
 }
 
 @media (max-width: $phone-big) {
-    .page__box--white {
+    .box--white {
         padding: 36px 16px;
     }
 }

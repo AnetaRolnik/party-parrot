@@ -1,15 +1,15 @@
-.page__title {
+.title {
     color: rgba(0, 0, 0, 0.5);
     margin: 0 0 9px;
     text-transform: uppercase;
 }
 
-.page__heading {
+.heading {
     color: rgba(0, 0, 0, 0.8);
 }
 
 @media (max-width: $phone-big) {
-    .page__title {
+    .title {
         margin-bottom: 0 0 6px;
     }
 }
