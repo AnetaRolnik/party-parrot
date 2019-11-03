@@ -51,12 +51,12 @@
 }
 
 @media (max-width: $phone-big) {
-  .page__btn--primary {
-    width: 100%;
+  .btn--primary {
+    max-width: 100%;
     padding: 12px 0;
   }
 
-  .page__btn--scroll {
+  .btn--scroll {
     width: 30px;
     height: 30px;
   }

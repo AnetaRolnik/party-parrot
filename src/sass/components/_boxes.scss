@@ -12,6 +12,12 @@
     color: $color-primary;
 }
 
+@media (max-width: $desktop) {
+    .box--white {
+        padding: 42px 30px;
+    }
+}
+
 @media (max-width: $phone-big) {
     .box--white {
         padding: 36px 16px;

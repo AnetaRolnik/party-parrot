@@ -1,10 +1,19 @@
 .tournament {
-    padding: 103px 0 80px;
+    padding-top: 103px;
+    margin-bottom: -110px;
+}
+
+.tournament__container {
+    display: grid;
+    grid-template-areas: 
+        'about photo' 
+        'statistics photo';
+    grid-template-columns: 50% calc(50% + 93px);
+    grid-template-rows: max-content;
 }
 
 .tournament__about {
-    width: 50%;
-    position: relative;
+    grid-area: about;
 }
 
 .tournament__heading {
@@ -12,18 +21,19 @@
 }
 
 .tournament__photo {
-    position: absolute;
-    width: 58%;
-    right: 0;
-    top: 72px;
+    grid-area: photo;
+    width: 100%;
+    margin: 72px 0 0 -93px;
 }
 
 .tournament__statistics {
-    position: absolute;
-    right: 54%;
+    grid-area: statistics;
     padding: 40px 42px 38px;
     text-align: center;
-    width: 42%;
+    width: 83%;
+    justify-self: center;
+    align-self: flex-start;
+    z-index: 2;
 }
 
 .tournament__title {
@@ -33,7 +43,11 @@
 
 .tournament__grid {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tournament__item {
+    width: 33%;
 }
 
 .tournament__number {
@@ -47,11 +61,16 @@
 
 @media (max-width: $desktop) {
     .tournament {
-        padding: 72px 0 196px;
+        padding-top: 72px;
+        margin-bottom: -125px;
     }
-    
-    .tournament__about {
-        width: calc(100% - 35% + 30px);
+
+    .tournament__container {
+        display: grid;
+        grid-template-areas: 
+            'about statistics' 
+            'photo statistics';
+        grid-template-columns: 65% calc(35% + 30px);
     }
     
     .tournament__heading {
@@ -59,31 +78,35 @@
     }
     
     .tournament__photo {
-        width: 65%;
-        left: 30px;
-        top: 100%;
+        margin: 0 0 0 40px;
     }
     
     .tournament__statistics {
-        right: 0;
-        top: 124px;
+        width: 100%;
+        justify-self: auto;
+        margin: 124px 0 0 -30px;
         padding: 40px 30px 20px 60px;
-        width: 35%;
+        z-index: 1;
     }
     
     .tournament__grid {
-        flex-direction: column;
-        align-items: center;
+        display: block;
     }
     
-    .tournament__desc {
-        margin-bottom: 20px;
+    .tournament__item {
+        width: 110px;
+        margin: 0 auto 20px;
     }
 }
 
 @media (max-width: $phone-big) {
     .tournament {
-        padding: 42px 0 0;
+        padding-top: 42px;
+        margin-bottom: 0;
+    }
+
+    .tournament__container {
+        display: block;
     }
     
     .tournament__about {
@@ -92,15 +115,14 @@
     }
     
     .tournament__photo {
-        position: static;
         width: 100%;
         margin: -36px 0 -4px;
     }
     
     .tournament__statistics {
-        position: static;
         padding: 36px 16px;
         width: 100%;
+        margin: 0;
     }
     
     .tournament__title {
